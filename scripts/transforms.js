@@ -11,6 +11,7 @@ function Mat4x4Translate(mat4x4, tx, ty, tz) {
         [0, 0, 1, tz],
         [0, 0, 0,  1]
     ]
+    return new Matrix(mat4x4.values)
 }
 
 // set values of mat4x4 to the scale matrix

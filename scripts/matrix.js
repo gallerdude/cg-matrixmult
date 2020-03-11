@@ -95,7 +95,7 @@ Matrix.multiply = function(matrices) {
         }
     }
     else {
-        console.log("could not multiply - requires at least 2 matrices");
+        console.log("could not multiply - requires at least 2 matrices, instead got ", matrices);
     }
     return result;
 }
