@@ -10,6 +10,10 @@ function CalculateCompoundTransform(transforms) {
     // otherwise multiply all matrices together (in proper order)
     // `compound_transform = Matrix.multiply(...)`
     var transform_matrices = transforms.map(transform => {
+        /* THIS IS THE SPOT I COULDN'T FIGURE OUT
+            I assume this looks like some sort of case switch where we use our functions to transform the transforms,
+            but I'm kind of lost in all of these objects and fields
+        */
         if (transform.type === "translate") Mat4x4Translate(transform, transform.mat4x4[0], transform.mat4x4[1], transform.mat4x4[2]);
 
         let result = new Matrix(4, 4);
